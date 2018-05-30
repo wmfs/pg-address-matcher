@@ -1,0 +1,2 @@
+DROP SCHEMA IF EXISTS match_test CASCADE;
+DROP SCHEMA IF EXISTS match_test_results CASCADE;
