@@ -7,6 +7,8 @@ notifications:
 node_js:
   - '9'
 services:
+  - postgres
+addons:
   postgresql: "9.6"
 sudo: false
 dist: trusty
