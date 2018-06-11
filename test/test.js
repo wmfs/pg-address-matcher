@@ -2,7 +2,7 @@
 
 'use strict'
 
-const HlPgClient = require('hl-pg-client')
+const HlPgClient = require('@wmfs/hl-pg-client')
 const path = require('path')
 const expect = require('chai').expect
 const matchTables = require('../lib/index.js')
