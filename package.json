@@ -1,34 +1,52 @@
 {
-  "name": "pg-address-matcher",
-  "version": "0.0.3",
+  "name": "@wmfs/pg-address-matcher",
+  "version": "0.0.0-semantically-released",
   "description": "A package to link two database tables by addresses",
+  "author": "West Midlands Fire Service",
+  "homepage": "https://github.com/wmfs/pg-address-matcher#readme",
+  "keywords": [
+    "tymly",
+    "package",
+    "postgresql",
+    "matching",
+    "records",
+    "addresses"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wmfs/pg-address-matcher.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wmfs/pg-address-matcher/issues"
+  },
   "main": "index.js",
   "dependencies": {
-    "async": "2.6.1",
+    "async": "2.6.0",
     "lodash": "4.17.10"
   },
   "devDependencies": {
     "chai": "4.1.2",
-    "hl-pg-client": "^0.0.2",
+    "codecov": "3.0.2",
+    "cz-conventional-changelog": "2.1.0",
     "mocha": "5.2.0",
-    "standard": "11.0.1"
+    "nyc": "12.0.2",
+    "semantic-release": "^15.5.1",
+    "standard": "11.0.1",
+    "@wmfs/hl-pg-client": "1.1.0"
   },
   "scripts": {
     "lint": "standard",
-    "test": "standard && mocha"
+    "test": "nyc mocha && standard",
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
-  "author": "Meena Hoda",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/wmfs/tymly"
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   },
-  "bugs": {
-    "url": "https://github.com/wmfs/tymly/issues"
-  },
-  "keywords": [
-    "matching",
-    "records",
-    "addresses"
-  ]
+  "publishConfig": {
+    "access": "public"
+  }
 }
