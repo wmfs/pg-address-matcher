@@ -48,10 +48,6 @@ addressMatch(
          }
        }
      }
-    }, 
-    client, 
-    (err) => {
-        // Callback
     }
 )
 ```
