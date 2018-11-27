@@ -18,7 +18,7 @@
 ## Usage
 
 ```
-const addressMatch = require('pg-address-matcher')
+const addressMatch = require('@wmfs/pg-address-matcher')
 
 addressMatch(
     {
