@@ -1,3 +1,49 @@
+# [1.2.0](https://github.com/wmfs/pg-address-matcher/compare/v1.1.0...v1.2.0) (2019-07-11)
+
+
+### 🛠 Builds
+
+* **deps:** update lodash requirement from 4.17.11 to 4.17.14 ([6c6d38e](https://github.com/wmfs/pg-address-matcher/commit/6c6d38e))
+* **deps-dev:** update [@semantic-release](https://github.com/semantic-release)/changelog requirement ([518a883](https://github.com/wmfs/pg-address-matcher/commit/518a883))
+* **deps-dev:** update [@semantic-release](https://github.com/semantic-release)/git requirement ([15de72b](https://github.com/wmfs/pg-address-matcher/commit/15de72b))
+* **deps-dev:** update [@semantic-release](https://github.com/semantic-release)/git requirement ([34ae7d9](https://github.com/wmfs/pg-address-matcher/commit/34ae7d9))
+* **deps-dev:** update [@semantic-release](https://github.com/semantic-release)/git requirement ([#69](https://github.com/wmfs/pg-address-matcher/issues/69)) ([3ac448f](https://github.com/wmfs/pg-address-matcher/commit/3ac448f))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/hl-pg-client requirement ([60d7e85](https://github.com/wmfs/pg-address-matcher/commit/60d7e85))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/hl-pg-client requirement ([951b656](https://github.com/wmfs/pg-address-matcher/commit/951b656))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/hl-pg-client requirement ([6519621](https://github.com/wmfs/pg-address-matcher/commit/6519621))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/hl-pg-client requirement ([a8f7461](https://github.com/wmfs/pg-address-matcher/commit/a8f7461))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/hl-pg-client requirement ([e461cdb](https://github.com/wmfs/pg-address-matcher/commit/e461cdb))
+* **deps-dev:** update chai requirement from 4.1.2 to 4.2.0 ([faeac2a](https://github.com/wmfs/pg-address-matcher/commit/faeac2a))
+* **deps-dev:** update mocha requirement from 5.2.0 to 6.1.4 ([597da12](https://github.com/wmfs/pg-address-matcher/commit/597da12))
+* **deps-dev:** update nyc requirement from 13.0.1 to 13.1.0 ([0c4c493](https://github.com/wmfs/pg-address-matcher/commit/0c4c493))
+* **deps-dev:** update nyc requirement from 13.1.0 to 14.1.1 ([e9d0292](https://github.com/wmfs/pg-address-matcher/commit/e9d0292))
+* **deps-dev:** update semantic-release requirement ([f3600aa](https://github.com/wmfs/pg-address-matcher/commit/f3600aa))
+* **deps-dev:** update semantic-release requirement ([04f2bd6](https://github.com/wmfs/pg-address-matcher/commit/04f2bd6))
+* **deps-dev:** update semantic-release requirement ([b86938a](https://github.com/wmfs/pg-address-matcher/commit/b86938a))
+* **deps-dev:** update semantic-release requirement ([70e1d5d](https://github.com/wmfs/pg-address-matcher/commit/70e1d5d))
+* **deps-dev:** update semantic-release requirement ([d92720c](https://github.com/wmfs/pg-address-matcher/commit/d92720c))
+* **deps-dev:** update semantic-release requirement ([18f4b2f](https://github.com/wmfs/pg-address-matcher/commit/18f4b2f))
+* **deps-dev:** update semantic-release requirement ([a994770](https://github.com/wmfs/pg-address-matcher/commit/a994770))
+* **deps-dev:** update semantic-release requirement ([3c054f2](https://github.com/wmfs/pg-address-matcher/commit/3c054f2))
+* **deps-dev:** update semantic-release requirement ([39f8c77](https://github.com/wmfs/pg-address-matcher/commit/39f8c77))
+* **deps-dev:** update semantic-release requirement ([bfce745](https://github.com/wmfs/pg-address-matcher/commit/bfce745))
+* **deps-dev:** update semantic-release requirement ([92ec9c3](https://github.com/wmfs/pg-address-matcher/commit/92ec9c3))
+* **deps-dev:** update semantic-release requirement ([ddc1030](https://github.com/wmfs/pg-address-matcher/commit/ddc1030))
+* **deps-dev:** update semantic-release requirement ([b84d09c](https://github.com/wmfs/pg-address-matcher/commit/b84d09c))
+* **deps-dev:** update semantic-release requirement ([#70](https://github.com/wmfs/pg-address-matcher/issues/70)) ([68eae49](https://github.com/wmfs/pg-address-matcher/commit/68eae49))
+
+
+### 📚 Documentation
+
+* Add CircleCI badge ([8e9a4fe](https://github.com/wmfs/pg-address-matcher/commit/8e9a4fe))
+* update readme ([c9ad358](https://github.com/wmfs/pg-address-matcher/commit/c9ad358))
+
+
+### ⚙️ Continuous Integrations
+
+* **circle:** Add CircleCI config ([3d5d5e2](https://github.com/wmfs/pg-address-matcher/commit/3d5d5e2))
+* **travis:** Remove Travis config ([3b0dd59](https://github.com/wmfs/pg-address-matcher/commit/3b0dd59))
+
 # [1.1.0](https://github.com/wmfs/pg-address-matcher/compare/v1.0.2...v1.1.0) (2018-09-12)
 
 
