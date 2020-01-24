@@ -1,3 +1,17 @@
+# [1.3.0](https://github.com/wmfs/pg-address-matcher/compare/v1.2.0...v1.3.0) (2020-01-24)
+
+
+### 🛠 Builds
+
+* **deps:** update async requirement from 2.6.1 to 2.6.3 ([5f00cd2](https://github.com/wmfs/pg-address-matcher/commit/5f00cd2223dfd57d1b8d06e6ab12cb8581242ac2))
+* **deps:** update lodash requirement from 4.17.14 to 4.17.15 ([851eb6d](https://github.com/wmfs/pg-address-matcher/commit/851eb6d1dfa481f1595a154d677e41dfd87f5749))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/hl-pg-client from 1.13.0 to 1.14.0 ([9c00ac3](https://github.com/wmfs/pg-address-matcher/commit/9c00ac3b7eb0e29aeb1681952d96e096a4ea169e))
+* **deps-dev:** bump mocha from 6.2.2 to 7.0.0 ([239a261](https://github.com/wmfs/pg-address-matcher/commit/239a26112c9294ddf948eecd4207bd89f59b1769))
+* **deps-dev:** bump packages ([cd3b489](https://github.com/wmfs/pg-address-matcher/commit/cd3b489534e57a43ec0857fffbaeb6d05c1441a3))
+* **deps-dev:** revert to standard 12.0.1 ([1dba36c](https://github.com/wmfs/pg-address-matcher/commit/1dba36c5903937938f6a7811349f8afa8022f935))
+* **deps-dev:** update dev dependancies ([4478741](https://github.com/wmfs/pg-address-matcher/commit/4478741ec4b656fcb86b9b50b75b4a70def86cee))
+* **deps-dev:** update standard requirement from 12.0.1 to 14.3.1 ([a3924e1](https://github.com/wmfs/pg-address-matcher/commit/a3924e1137dc989495982764af5bffa739dd2cb6))
+
 # [1.2.0](https://github.com/wmfs/pg-address-matcher/compare/v1.1.0...v1.2.0) (2019-07-11)
 
 
