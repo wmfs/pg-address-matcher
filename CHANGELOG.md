@@ -1,3 +1,19 @@
+# [1.4.0](https://github.com/wmfs/pg-address-matcher/compare/v1.3.0...v1.4.0) (2020-01-27)
+
+
+### 🛠 Builds
+
+* **deps:** bump async from 3.1.0 to 3.1.1 ([aab7c41](https://github.com/wmfs/pg-address-matcher/commit/aab7c412f99e56f30baa1ad414861b93b7fce039))
+* **deps-dev:** bump codecov from 3.6.1 to 3.6.2 ([2057be5](https://github.com/wmfs/pg-address-matcher/commit/2057be5559caad347a99d343926c2ada0d74ca67))
+* **deps-dev:** bump conventional-changelog-metahub from 3.0.0 to 4.0.0 ([196ff08](https://github.com/wmfs/pg-address-matcher/commit/196ff086feb1f40d5a6dea58f94a959db9fb3748))
+* **deps-dev:** bump mocha from 7.0.0 to 7.0.1 ([14fd038](https://github.com/wmfs/pg-address-matcher/commit/14fd03891dadce1bef7f636590218108d951df2b))
+* **deps-dev:** bump standard from 12.0.1 to 14.3.1 ([19cee30](https://github.com/wmfs/pg-address-matcher/commit/19cee30b0635906c752d7a695cd7994b6daeb4f5))
+
+
+### 💎 Styles
+
+* Strings must use singlequote. ([7707d1f](https://github.com/wmfs/pg-address-matcher/commit/7707d1f7f6a053ae7a86a8ca1e17ad66ff7df498))
+
 # [1.3.0](https://github.com/wmfs/pg-address-matcher/compare/v1.2.0...v1.3.0) (2020-01-24)
 
 
