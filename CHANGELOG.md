@@ -1,3 +1,21 @@
+# [1.5.0](https://github.com/wmfs/pg-address-matcher/compare/v1.4.0...v1.5.0) (2020-02-26)
+
+
+### 🛠 Builds
+
+* **deps:** bump async from 3.1.1 to 3.2.0 ([07aa9a6](https://github.com/wmfs/pg-address-matcher/commit/07aa9a6bd667c9705e9bbfc559ec3c33ec2f3338))
+* **deps-dev:** bump [@semantic-release](https://github.com/semantic-release)/changelog from 3.0.6 to 5.0.0 ([be96b7c](https://github.com/wmfs/pg-address-matcher/commit/be96b7c0785cb020dc47f8050251c8abb49eb7fa))
+* **deps-dev:** bump [@semantic-release](https://github.com/semantic-release)/git from 7.0.18 to 9.0.0 ([c9aab2a](https://github.com/wmfs/pg-address-matcher/commit/c9aab2a413ce1a9c77263cb8fa3ca3e8497bfc43))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/hl-pg-client from 1.14.0 to 1.15.0 ([2b20379](https://github.com/wmfs/pg-address-matcher/commit/2b203791244ae230349c07bde5cdefe25e56db65))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/hl-pg-client from 1.15.0 to 1.16.0 ([001432e](https://github.com/wmfs/pg-address-matcher/commit/001432ee2e83f86a92eaa305e96071f077cfb167))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/hl-pg-client from 1.16.0 to 1.17.0 ([7e9dace](https://github.com/wmfs/pg-address-matcher/commit/7e9dace67fb4f8b69bcbe44e8f16f7b40ec30003))
+* **deps-dev:** bump codecov from 3.6.2 to 3.6.3 ([45cb50a](https://github.com/wmfs/pg-address-matcher/commit/45cb50af7c7606765b0a97f195a0f6579235015f))
+* **deps-dev:** bump codecov from 3.6.3 to 3.6.4 ([c28e261](https://github.com/wmfs/pg-address-matcher/commit/c28e2618227ef9746c225cfbc78b76ba52b0f7ff))
+* **deps-dev:** bump codecov from 3.6.4 to 3.6.5 ([74af8e6](https://github.com/wmfs/pg-address-matcher/commit/74af8e690c097c090312880db28e8dc343adbcf5))
+* **deps-dev:** bump cz-conventional-changelog from 3.0.2 to 3.1.0 ([2e62285](https://github.com/wmfs/pg-address-matcher/commit/2e6228509e9a9b529a2a6ba360c1fe0f14309286))
+* **deps-dev:** bump semantic-release from 15.14.0 to 17.0.3 ([61f6110](https://github.com/wmfs/pg-address-matcher/commit/61f6110e0aacff08ae491b81d616f9922e62736d))
+* **deps-dev:** bump semantic-release from 17.0.3 to 17.0.4 ([7f7b196](https://github.com/wmfs/pg-address-matcher/commit/7f7b19634ce6f5fee3e73ccecdd34be7cce04181))
+
 # [1.4.0](https://github.com/wmfs/pg-address-matcher/compare/v1.3.0...v1.4.0) (2020-01-27)
 
 
