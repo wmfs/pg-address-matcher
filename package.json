@@ -21,9 +21,7 @@
     "url": "https://github.com/wmfs/pg-address-matcher/issues"
   },
   "main": "index.js",
-  "dependencies": {
-    "lodash": "4.17.15"
-  },
+  "dependencies": {},
   "devDependencies": {
     "chai": "4.2.0",
     "codecov": "3.6.5",
