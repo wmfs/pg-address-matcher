@@ -1,3 +1,42 @@
+# [1.6.0](https://github.com/wmfs/pg-address-matcher/compare/v1.5.0...v1.6.0) (2020-04-27)
+
+
+### 🛠 Builds
+
+* **deps:** Removed 'async' package. Not used. ([37330b8](https://github.com/wmfs/pg-address-matcher/commit/37330b83db0ed5782d2bdf827a756d5e2a8bd19b))
+* **deps:** Removed lodash dependency ([17c640e](https://github.com/wmfs/pg-address-matcher/commit/17c640ecba466fa451e6a17aabf5c21947b2f0a0))
+* **deps-dev:** bump [@semantic-release](https://github.com/semantic-release)/changelog from 5.0.0 to 5.0.1 ([9df12d8](https://github.com/wmfs/pg-address-matcher/commit/9df12d86c67f3a97c821315f2e61fcb518b452a2))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/hl-pg-client from 1.17.0 to 1.18.0 ([ff6403e](https://github.com/wmfs/pg-address-matcher/commit/ff6403edc3361847c2b9ee6f0c518c4c413b8836))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/hl-pg-client from 1.18.0 to 1.19.0 ([e11ed3b](https://github.com/wmfs/pg-address-matcher/commit/e11ed3baa132e4f1614a71b92f30035d10839cc3))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/hl-pg-client from 1.19.0 to 1.20.0 ([711b218](https://github.com/wmfs/pg-address-matcher/commit/711b2182d9a02ed91b1773c24499ecf44ff62250))
+* **deps-dev:** bump conventional-changelog-metahub from 4.0.0 to 4.0.1 ([5d213c5](https://github.com/wmfs/pg-address-matcher/commit/5d213c52cc91e4a20ff61b87e0b5bd85198dac49))
+* **deps-dev:** bump mocha from 7.0.1 to 7.1.0 ([ab9691a](https://github.com/wmfs/pg-address-matcher/commit/ab9691a646d29c4ff4dd9f52b3b977fa406c91b1))
+* **deps-dev:** bump mocha from 7.1.0 to 7.1.1 ([528511b](https://github.com/wmfs/pg-address-matcher/commit/528511bb1b43a37ae055e4d2880385573a918822))
+* **deps-dev:** bump mocha from 7.1.1 to 7.1.2 ([8f07b4c](https://github.com/wmfs/pg-address-matcher/commit/8f07b4c54adb9e7a3309b3469697e06d97fc2f04))
+* **deps-dev:** bump nyc from 15.0.0 to 15.0.1 ([9689441](https://github.com/wmfs/pg-address-matcher/commit/96894415057d1b373b63872126931e15e677730a))
+* **deps-dev:** bump semantic-release from 17.0.4 to 17.0.5 ([3a8c5c3](https://github.com/wmfs/pg-address-matcher/commit/3a8c5c3978422dd86dbdef09b33a570c348bc47a))
+* **deps-dev:** bump semantic-release from 17.0.5 to 17.0.6 ([33f069b](https://github.com/wmfs/pg-address-matcher/commit/33f069b26a3d4e28e2b8405efd79aee0cca4da5b))
+* **deps-dev:** bump semantic-release from 17.0.6 to 17.0.7 ([1480536](https://github.com/wmfs/pg-address-matcher/commit/1480536b15e4637cc8e8da208e95094956459c84))
+* **deps-dev:** bump standard from 14.3.1 to 14.3.2 ([dd9c7d0](https://github.com/wmfs/pg-address-matcher/commit/dd9c7d0c3b7851c5c500ef7c13498720359c1107))
+* **deps-dev:** bump standard from 14.3.2 to 14.3.3 ([4c04762](https://github.com/wmfs/pg-address-matcher/commit/4c04762acafb9aa53edb8196add375ce250a6aec))
+
+
+### 📦 Code Refactoring
+
+* Neaten up match-postcode-and-name ([a180dbe](https://github.com/wmfs/pg-address-matcher/commit/a180dbea935635cb1932e0a87c2ddae99364c1f8))
+* No need to wrap client.query in a Promise ([9cb93c9](https://github.com/wmfs/pg-address-matcher/commit/9cb93c93a46c11725b196fc52967d43c2ba84a47))
+
+
+### 🚨 Tests
+
+* Setup in before(), teardown in after() ([960227d](https://github.com/wmfs/pg-address-matcher/commit/960227dc6ab79c7926a1390ee0684433b402a614))
+* Tighten up test names ([5ebafa7](https://github.com/wmfs/pg-address-matcher/commit/5ebafa7968e27b5e69d2d92073ce0e6de04079ef))
+
+
+### ⚙️ Continuous Integrations
+
+* **circle:** add context env var config to config.yml ([8455731](https://github.com/wmfs/pg-address-matcher/commit/845573122d9fc38a9237e71968b459950c3c3823))
+
 # [1.5.0](https://github.com/wmfs/pg-address-matcher/compare/v1.4.0...v1.5.0) (2020-02-26)
 
 
