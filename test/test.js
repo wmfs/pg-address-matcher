@@ -12,7 +12,7 @@ const generateStatementInitTable = initMatchTables.generateStatement
 const processWhere = matchPostcodeAndName.processWhere
 const process = require('process')
 
-describe('Run some tests', function () {
+describe('pg-address-matcher', function () {
   this.timeout(process.env.TIMEOUT || 5000)
 
   const options = {
@@ -52,32 +52,32 @@ describe('Run some tests', function () {
     }
   })
 
-  before('Should setup database connection', (done) => {
+  before('setup database connection', (done) => {
     client = new HlPgClient(process.env.PG_CONNECTION_STRING)
     done()
   })
 
-  it('Should install test schemas', () => {
+  before('install test schemas', () => {
     return client.runFile(path.resolve(__dirname, 'fixtures', 'scripts', 'setup.sql'))
   })
 
-  describe('exact match', () => {
-    it('Should test processing the where part of a statement with both strings', (done) => {
+  describe('where exact match', () => {
+    it('two strings', (done) => {
       const where = processWhere(
         'exact',
-        ['full_name'],
-        ['first_name']
+        'full_name',
+        'first_name'
       )
       expect(where.trim()).to.eql('(' +
         'upper(full_name) = upper(first_name))')
       done()
     })
 
-    it('Should test processing the where part of a statement with only source array', (done) => {
+    it('with source array', (done) => {
       const where = processWhere(
         'exact',
         ['full_name', 'name'],
-        ['first_name']
+        'first_name'
       )
       expect(where.trim()).to.eql('(' +
         'upper(full_name) = upper(first_name) OR ' +
@@ -85,10 +85,10 @@ describe('Run some tests', function () {
       done()
     })
 
-    it('Should test processing the where part of a statement with only target array', (done) => {
+    it('with target array', (done) => {
       const where = processWhere(
         'exact',
-        ['full_name'],
+        'full_name',
         ['first_name', 'last_name']
       )
       expect(where.trim()).to.eql('(' +
@@ -97,7 +97,7 @@ describe('Run some tests', function () {
       done()
     })
 
-    it('Should test processing the where part of a statement with both arrays', (done) => {
+    it('with two arrays', (done) => {
       const where = processWhere(
         'exact',
         ['full_name', 'name'],
@@ -113,11 +113,22 @@ describe('Run some tests', function () {
   })
 
   describe('fuzzy match', () => {
-    it('Should test processing the where part of a statement with only source array', (done) => {
+    it('two strings', (done) => {
+      const where = processWhere(
+        'fuzzy',
+        'full_name',
+        'first_name'
+      )
+      expect(where.trim()).to.eql('(' +
+        'difference(full_name, first_name) = 4)')
+      done()
+    })
+
+    it('with source array', (done) => {
       const where = processWhere(
         'fuzzy',
         ['full_name', 'name'],
-        ['first_name']
+        'first_name'
       )
       expect(where.trim()).to.eql('(' +
         'difference(full_name, first_name) = 4 OR ' +
@@ -125,10 +136,10 @@ describe('Run some tests', function () {
       done()
     })
 
-    it('Should test processing the where part of a statement with only target array', (done) => {
+    it('with target array', (done) => {
       const where = processWhere(
         'fuzzy',
-        ['full_name'],
+        'full_name',
         ['first_name', 'last_name']
       )
       expect(where.trim()).to.eql('(' +
@@ -137,7 +148,7 @@ describe('Run some tests', function () {
       done()
     })
 
-    it('Should test processing the where part of a statement with both arrays', (done) => {
+    it('with two arrays', (done) => {
       const where = processWhere(
         'fuzzy',
         ['full_name', 'name'],
@@ -153,7 +164,7 @@ describe('Run some tests', function () {
   })
 
   describe('match table', () => {
-    it('Should test the statement to generate match table', (done) => {
+    it('generate match table statement', (done) => {
       const statement = generateStatementInitTable(options)
       expect(statement.trim()).to.eql('CREATE SCHEMA IF NOT EXISTS match_test_results; ' +
         'DROP TABLE IF EXISTS match_test_results.food_addressbase; ' +
@@ -162,11 +173,11 @@ describe('Run some tests', function () {
       done()
     })
 
-    it('Should match the tables', () => {
+    it('match the tables', () => {
       return matchTables(options, client)
     })
 
-    it('Should check the results', async () => {
+    it('verify matches', async () => {
       const results = await client.query(`select food_id, address_id from ${options.match.schema}.${options.match.table} where match_certainty != 0`)
       expect(results.rows).to.eql([
         { food_id: '111111', address_id: '111' },
@@ -179,7 +190,7 @@ describe('Run some tests', function () {
       ])
     })
 
-    it('Should check the results', async () => {
+    it('verify mismatches', async () => {
       const results = await client.query(`select food_id, address_id from ${options.match.schema}.${options.match.table} where match_certainty = 0`)
       expect(results.rows).to.eql([
         { food_id: '222222', address_id: null },
@@ -188,11 +199,11 @@ describe('Run some tests', function () {
     })
   })
 
-  after('Should uninstall test schemas', () => {
+  after('uninstall test schemas', () => {
     return client.runFile(path.resolve(__dirname, 'fixtures', 'scripts', 'cleanup.sql'))
   })
 
-  after('Should close database connections', function (done) {
+  after('close database connections', function (done) {
     client.end()
     done()
   })
